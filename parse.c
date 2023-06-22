@@ -24,14 +24,6 @@ void parse_line(char *line, unsigned int line_number, stack_t **stack)
 
 	instruction->func(stack, line_number);
 }
-/**
- * get_opc - gets the opcode function
- * @stack: pointer to the stack or queue
- * @arg: the command
- * @val: the value
- * @line_number: the line number
- * Return: 0 on success || 1 if not a digit || -1 on error
- */
 
 instruction_t instructions[] = {
 	{"push", opcode_push},
